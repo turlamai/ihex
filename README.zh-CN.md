@@ -45,14 +45,14 @@ raco pkg install ihex
 完整的记录模型、记录类型、解析和写入契约、地址窗口及错误处理请查阅
 [Scribble API 文档](ihex/scribblings/ihex.scrbl)；文档中的
 `scribble/example` 会在构建时真实执行。
-[独立入门示例](examples/quickstart.rkt)用合成数据验证上面的映像往返和入口地址。
+[独立入门示例](ihex/examples/quickstart.rkt)用合成数据验证上面的映像往返和入口地址。
 
 安装 Racket 及 `raco` 后，在仓库根目录运行：
 
 ```sh
 raco pkg install --auto --link "$(pwd)"
 raco test -p ihex
-racket examples/quickstart.rkt
+racket ihex/examples/quickstart.rkt
 raco setup --check-pkg-deps -l ihex
 ```
 

@@ -62,7 +62,7 @@ The [Scribble API reference](ihex/scribblings/ihex.scrbl) defines the
 record model, accepted record types, exact parser and writer contracts, address
 windows and error conditions. Its quickstart uses `scribble/example` and is
 evaluated during documentation builds. The
-[executable quickstart](examples/quickstart.rkt) independently verifies the
+[executable quickstart](ihex/examples/quickstart.rkt) independently verifies the
 README's image round-trip and entry-point results with synthetic data.
 
 From the repository root, with Racket and `raco` installed:
@@ -70,7 +70,7 @@ From the repository root, with Racket and `raco` installed:
 ```sh
 raco pkg install --auto --link "$(pwd)"
 raco test -p ihex
-racket examples/quickstart.rkt
+racket ihex/examples/quickstart.rkt
 raco setup --check-pkg-deps -l ihex
 ```
 
